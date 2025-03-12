@@ -164,3 +164,43 @@ Agile Best Practices
 4. Retrospectives to continuously improve team processes
    
 5. Automation to reduce manual efforts and improve efficiency
+
+
+Frontend:
+-----------------
+- Visible part of an application.
+
+- Technologies: HTML, CSS, JavaScript.
+
+- Frameworks: React, Angular, Vue.js.
+
+Backend:
+--------------------
+- Server-side logic and database management.
+  
+- Technologies: Node.js, Python, Java.
+
+- Frameworks: Django, Spring, Express.js.
+
+
+
+Roles of Developer
+---------------------------
+Write and debug code.
+Implement features as per requirements.
+
+Roles of Tester
+------------------------
+Test the application for bugs and performance issues.
+Ensure the application meets user expectations.
+
+Roles of Database Team
+------------------------
+Design and manage databases.
+Ensure data security and availability.
+
+Roles of DevOps Team
+-------------------------
+Automate CI/CD pipelines.
+Manage infrastructure and deployment.
+Monitor and optimize application performance.
