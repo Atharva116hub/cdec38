@@ -19,6 +19,7 @@ GIT Lifecycle:
 
 
 1.INITIALIZEGIT/CLONE REPO
+
    clone an existing repo using git clone <repo-url>
    OR initializing new repo using git init command ---> .git
    
@@ -50,7 +51,7 @@ Git Workflow Explained
 ---------------------------------------
 1. Clone the repository: git clone <repo-url>.
    
-2.Create a feature branch: git checkout -b <feature-branch>.
+2. Create a feature branch: git checkout -b <feature-branch>.
 
 3. Make changes and commit: git add . && git commit -m "Description".
 
