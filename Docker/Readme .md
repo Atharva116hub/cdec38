@@ -883,8 +883,10 @@ docker volume prune -f
 ```
 
 Using Volumes with the -v Option
----------------------------------------------
+--------------------------------
+
 Anonymous Volume Example:
+----------------------------------
 
 - Anonymous volumes are created specifically for a single container. 
 

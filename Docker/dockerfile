@@ -10,6 +10,21 @@ CMD ["java","-jar","jenkins.war"]
 
 
 ---
+FROM ubuntu:latest
+
+LABEL name="anil"
+LABEL desc="this d f is used to deploy app"
+
+ENV varname="ram"
+ENV varpass="1234"
+
+RUN apt-get update -y && apt-get install nginx -y && apt-get clean
+EXPOSE 80
+
+CMD ["nginx" , "-g" , "daemon off;"]
+---
+
+
 
 
  # Use the official Nginx image
