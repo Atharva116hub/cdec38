@@ -5,7 +5,6 @@ metadata:
   labels:
     app: my-app
   namespace: dev
-
 spec:
   containers:
     - name: my-container
@@ -13,8 +12,8 @@ spec:
       ports:
         - containerPort: 80
 
-
 ---
+
 apiVersion: v1
 kind: Service
 metadata:
@@ -37,6 +36,7 @@ metadata:
   name: my-poda 
   labels:
     app: my-apps 
+  namespace: space-x  
 spec:
   containers: 
     - name: my-con 
@@ -68,17 +68,19 @@ kind: Pod
 metadata:
   name: my-pod
   selector:
-    app: my-app
+    app: my-apps
+  namespace: dev  
 spec:
   containers:
   - name: my-container
     image: httpd 
     ports:
     - containerPort: 80
-    - name: my-container
-      image: tocat
-      ports:
-        - containerPort: 8080
+
+  - name: my-container
+    image: tomcat
+    ports:
+    - containerPort: 8080
   
 
         
