@@ -65,23 +65,23 @@ CMD ["httpd", "-D", "FOREGROUND"]
 ---
 
 
-# Use the official Nginx image
-FROM nginx:latest
+# # Use the official Nginx image
+# FROM nginx:latest
 
-# Set the working directory
-#WORKDIR /usr/share/nginx/html/
-# Download  the  Best-Jewellery-Collection HTML template 
-ADD  https://www.free-css.com/assets/files/free-css-templates/download/page296/healet.zip  /opt
+# # Set the working directory
+# #WORKDIR /usr/share/nginx/html/
+# # Download  the  Best-Jewellery-Collection HTML template 
+# ADD  https://www.free-css.com/assets/files/free-css-templates/download/page296/healet.zip  /opt
 
-#  extract the HTML template
-RUN apt-get update && apt-get install -y  unzip
-RUN cd /opt && unzip healet.zip -d /opt && cd /opt/healet-html/ && cp -rvf /opt/healet-html/*  /usr/share/nginx/html
-RUN chmod -R 755 /usr/share/nginx/html/
+# #  extract the HTML template
+# RUN apt-get update && apt-get install -y  unzip
+# RUN cd /opt && unzip healet.zip -d /opt && cd /opt/healet-html/ && cp -rvf /opt/healet-html/*  /usr/share/nginx/html
+# RUN chmod -R 755 /usr/share/nginx/html/
 
 
-# Expose port 80
-EXPOSE 80
+# # Expose port 80
+# EXPOSE 80
 
-# Start Nginx
-CMD ["nginx", "-g", "daemon off;"]
+# # Start Nginx
+# CMD ["nginx", "-g", "daemon off;"]
 
