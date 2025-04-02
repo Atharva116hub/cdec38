@@ -432,10 +432,11 @@ spec:
   replicas: 3
   selector:
      matchExpressions:
-       - key: app
-         operator: In
-         values:
-          -  my-app-rs
+      #  - key: app
+      #    operator: In
+      #    values:
+      #     -  my-app-rs
+        - {key: app, operator: In, values: [my-app-rs]}  
   template:
     metadata:
       labels:
