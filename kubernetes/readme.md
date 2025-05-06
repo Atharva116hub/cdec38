@@ -520,3 +520,10 @@ Stateless vs Stateful Applications
 
 Example: A database like PostgreSQL where data must be retained even if the pod restarts.
  
+
+  - remove all resources in this namespace
+
+```bash
+kubectl delete all  --all -n ingress-nginx
+kubectl delete ingress ingress-nginx
+```
